@@ -1,3 +1,5 @@
+var reproject = require('reproject');
+
 class AddressSearchComponent extends React.Component{
     constructor(props){
         super(props);
