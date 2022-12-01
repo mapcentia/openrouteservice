@@ -4,8 +4,8 @@ var DHPColorPicker = require('./shared/dhpColorPicker');
 import {BufferAdjustor} from './Marker/BufferAdjustorComponent';
 var SocioeconomicTableComponent = require('../../detailhandelsportalen/browser/SocioeconomicTableComponent');
 var ForbrugTable = require('../../detailhandelsportalen/commonFunctions/forbrugTable');
-var EconomySummaryComponent = require('./economysummary')
-
+var EconomySummaryComponent = require('./economysummary');
+var reproject = require('reproject');
 
 class DetailCircle extends ExtraTableFunctions{
     constructor(parentLayer, marker, radius, reactId, settings){
