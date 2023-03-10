@@ -7,7 +7,7 @@ class OpenRouteServiceSettings extends React.Component{
         this.state.limit = {
             "driving-car": {
                 min: 1,
-                max: 20
+                max: 45
             },
             "cycling-regular": {
                 min: 1,
