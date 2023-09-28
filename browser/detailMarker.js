@@ -146,12 +146,15 @@ class DetailMarker{
     getAllData() {
         return this.circle1.updateData().then(() => {
             this.circle2.updateData().then(() => {
-                this.isochrone.isochrone.isochrone1.getTableDataForbrug().then(() => {
-                    this.isochrone.isochrone.isochrone2.getTableDataForbrug().then( () => {
-                        DHPDrawnPolygonArray.forEach((e) => {e.layer.bringToFront()})
-                    });
-                    
-                })
+                setTimeout(()=> {
+                    this.isochrone.isochrone.isochrone1.getTableDataForbrug().then(() => {
+                        this.isochrone.isochrone.isochrone2.getTableDataForbrug().then(() => {
+                            DHPDrawnPolygonArray.forEach((e) => {
+                                e.layer.bringToFront()
+                            })
+                        });
+                    })
+                }, 100);
             })
         });
     }

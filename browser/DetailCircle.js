@@ -123,7 +123,7 @@ class DetailCircle extends ExtraTableFunctions{
             error: function(e){
                 console.log('Isochrone Ajax failed', e)
             }
-        })        
+        })
     }
 
     addReactComponent(){      
@@ -166,7 +166,7 @@ class DetailCircle extends ExtraTableFunctions{
                 }
             }
 
-            console.log({economyData: this.economyData, sortedEconomyData: this.sortedEconomyData, data: this.data, houseInSum: houseInSum})
+            // console.log({economyData: this.economyData, sortedEconomyData: this.sortedEconomyData, data: this.data, houseInSum: houseInSum})
             console.log('hussum sortedEconomyData', this.sortedEconomyData.hussum, )
 
             ReactDOM.render(

@@ -101,7 +101,7 @@ class AdditionalLeafletFunctions{
             success: function(data){
                 self.economyData = data;
                 self.sortedEconomyData = self.sumEconomyValues(data.features);
-                console.log(self.sortedEconomyData);
+                // console.log(self.sortedEconomyData);
                 //console.log('data!', type, data);
             },
             error: function(data){

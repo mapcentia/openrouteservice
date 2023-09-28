@@ -113,7 +113,7 @@ class IsochroneDataContainer extends ExtraTableFunctions{
                 //console.log('changing household data', householdData)
             }
 
-            console.log({economyData: this.economyData, sortedEconomyData: this.sortedEconomyData, data: this.data, houseInSum: houseInSum})
+            // console.log({economyData: this.economyData, sortedEconomyData: this.sortedEconomyData, data: this.data, houseInSum: houseInSum})
 
             ReactDOM.render(
                 <div>
