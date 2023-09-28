@@ -134,7 +134,8 @@ class AddressSearchComponent extends React.Component{
         if(this.props.userLevel != null && this.props.userLevel >= 3){
             return (<tr>
                 <td>Link til BBR</td>
-                <td><a href={"https://boligejer.dk/ejendomsdata/0/10/0/0"+dar.esrejendomsnr+"%7C0"+ dar.kommunekode} target="_blank">Link</a></td>
+                <td><a href={" https://boligejer.dk/ejendomsdata?kommuneId="&dar.kommunekode&"&ejendomId="&+dar.esrejendomsnr} target="_blank">Link</a></td>
+            {/*<td><a href={"https://boligejer.dk/ejendomsdata/0/10/0/0"+dar.esrejendomsnr+"%7C0"+ dar.kommunekode} target="_blank">Link</a></td>*/}
                 {/*<td><a href={"https://boligejer.dk/pls/wwwdata/get_ois_pck.show_bbr_meddelelse_pdf?i_municipalitycode="+dar.kommunekode+"&i_realpropertyidentifier="+dar.esrejendomsnr} target="_blank">Link</a></td>*/}
             </tr>);
         }else if(this.state.userLevel == null){
