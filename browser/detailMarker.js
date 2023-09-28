@@ -146,7 +146,7 @@ class DetailMarker{
     getAllData() {
         return this.circle1.updateData().then(() => {
             this.circle2.updateData().then(() => {
-                setTimeout(()=> {
+                setTimeout(()=> { // Fixes race condition
                     this.isochrone.isochrone.isochrone1.getTableDataForbrug().then(() => {
                         this.isochrone.isochrone.isochrone2.getTableDataForbrug().then(() => {
                             DHPDrawnPolygonArray.forEach((e) => {
