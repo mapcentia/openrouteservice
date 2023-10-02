@@ -196,12 +196,12 @@ class DetailDrawPolygon extends ExtraTableFunctions{
             console.log('socioeconomy!', socioeconomySum);
             //static data
             let houseInSum = {
-                ant_hus_in: 0,
-                ant_hus__1: 0,
-                ant_hus__2: 0,
-                ant_hus__3: 0,
-                ant_hus__4: 0,
-                ant_hus__5: 0,
+                ant_hus_indk1_: 0,
+                ant_hus_indk2_: 0,
+                ant_hus_indk3_: 0,
+                ant_hus_indk4_: 0,
+                ant_hus_indk5_: 0,
+                ant_hus_indk9_: 0,
             }
             //assign true values from socioeconomy to static data;
             Object.keys(houseInSum).forEach((key) => {
@@ -211,7 +211,7 @@ class DetailDrawPolygon extends ExtraTableFunctions{
             let householdData = null;
             
             if(Object.keys(socioeconomySum).length > 0 && socioeconomySum.husinksum > 0){
-                let difference = (socioeconomySum.hussum - socioeconomySum.husinksum) + socioeconomySum.ant_hus__5;
+                let difference = (socioeconomySum.hussum - socioeconomySum.husinksum) + socioeconomySum.ant_hus_indk9_;
                 let difference_percentage =  ((difference / socioeconomySum.hussum)* 100).toFixed(1);
                 householdData = {
                     husinksum: socioeconomySum.husinksum,
@@ -220,7 +220,7 @@ class DetailDrawPolygon extends ExtraTableFunctions{
                 }
             }
             /*
-                HH_diff = (hussum  - husinksum) +  economy.ant_hus__5
+                HH_diff = (hussum  - husinksum) +  economy.ant_hus_indk9_
                 HH_diff_percent = HH_diff / hussum
                 Spendings_max = ( 32787 + 4055 + 9365 ) * HH_diff
                 spending_min =( 91277 + 27073 + 63804 ) *HH_diff
