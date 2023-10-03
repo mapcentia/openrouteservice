@@ -66,7 +66,7 @@ class ColorPicker extends React.Component{
               {/*   <div className="badge" style={style} onClick={this.handeClick} ><i className="fa fa-palette" aria-hidden="true"></i> Vælg farve</div>
                 <div className="badge" style={style} onClick={this.props.toggle}><i className="fa fa-eye" aria-hidden="true"></i> Vis/skjul opland</div>*/}
                 <button className="btn btn-default btn-raised btn-xs" style={style} onClick={this.handeClick} alt="Vælg farve og gennemsigtighed"> <i className="fa fa-palette" aria-hidden="true"></i> Juster farve og gennemsigtighed </button>
-                <button className="btn btn-default btn-raised btn-xs" style={style} onClick={this.props.toggle} alt="Vis/skjul overlap"><i className="fa fa-eye" aria-hidden="true"></i> Vis/Skjul </button>
+                <button className="btn btn-default btn-raised btn-xs" style={style} onClick={this.props.toggle} alt="Vis/Skjul - Aktuelt opland"><i className="fa fa-eye" aria-hidden="true"></i> Vis/Skjul - Aktuelt opland</button>
                 {this.state.displayColorPicker ? colorPickerContainer: ''}
              </div>
         )
