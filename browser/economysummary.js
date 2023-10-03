@@ -38,11 +38,11 @@ class EconomySummaryComponent extends React.Component{
                         </tr>
                         <tr>
                             <td width="50%">Antal personer</td>
-                            <td className="text-right">{this.localeFilter(this.props.calculatedEconomy ? this.props.calculatedEconomy.befsum: '')}</td>
+                            <td className="text-right">{this.localeFilter(this.props.calculatedEconomy ? this.props.calculatedEconomy.antpersh_4: '')}</td>
                         </tr>
                         <tr>
                             <td width="50%">Antal husstande</td>
-                            <td className="text-right">{this.localeFilter(this.props.calculatedEconomy ? this.props.calculatedEconomy.hussum: '')}</td>
+                            <td className="text-right">{this.localeFilter(this.props.calculatedEconomy ? this.props.calculatedEconomy.anthust_4: '')}</td>
                         </tr>
                         
 
