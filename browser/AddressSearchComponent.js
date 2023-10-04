@@ -190,19 +190,16 @@ class AddressSearchComponent extends React.Component{
                             <td>Adresse ID</td>
                             <td>{this.state.darData.gid}</td>
                         </tr>
+                        <tr>
+                            <td>Kommunekode</td>
+                            <td className="dar-komkode">{this.state.darData.kommunekode}</td>
+                        </tr>
                         */}
                         <tr>
                             <td>Adresse</td>
                             <td>{this.state.darData.string4}</td>
                         </tr>
-                        <tr>
-                            <td>Ejendomsnummer (ESR)</td>
-                            <td>{this.state.darData.esrejendomsnr}</td>
-                        </tr>
-                        <tr>
-                            <td>Kommunekode</td>
-                            <td className="dar-komkode">{this.state.darData.kommunekode}</td>
-                        </tr>
+
                         {this.prodetails(this.state.darData)
                     }
                 </React.Fragment>
