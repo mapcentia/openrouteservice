@@ -48,7 +48,7 @@ class NameComponent extends React.Component{
                             </td>
                         </tr>
                         <tr>
-                            <td><p>ID</p></td>
+                            <td>ID</td>
                             <td>
                                 {this.props.id ? this.props.id : ''}
                             </td>
