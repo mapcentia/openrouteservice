@@ -303,7 +303,7 @@ module.exports = {
             render(){
                 return(
                     <button className="btn btn-default btn-raised btn-xs hide-all-layers float-right" alt="Vis/Skjul - Alle oplande" onClick={this.toggleLayers}>
-                        <i className="fa fa-eye" aria-hidden="true"></i> Vis/Skjul <br /> Alle oplande
+                        <i className="fa fa-eye" aria-hidden="true"></i> Vis/Skjul - Alle oplande
                         <div className="ripple-container"></div>
                     </button>
                 )
